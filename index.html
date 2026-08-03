@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#f6efe5" />
+    <meta name="description" content="Guia digital da Casa Cabana" />
+    <title>Casa Cabana</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+    <style>
+:root{--cream:#eee1d4;--paper:#f8f0e8;--sand:#d8c1ad;--brown:#3f3028;--muted:#806d61;--terra:#9e684f;--terra-dark:#7d4e3b;--green:#60745e;--line:rgba(63,48,40,.14);--shadow:0 18px 50px rgba(73,48,35,.12)}
+*{box-sizing:border-box}html{background:#c9bdb1;scroll-behavior:smooth}body{margin:0;color:var(--brown);font-family:"DM Sans",sans-serif;background:radial-gradient(circle at 50% 0,#e9ddd2 0,transparent 45%),#c9bdb1;min-height:100vh}button,input{font:inherit}.site-shell{position:relative;width:100%;max-width:480px;min-height:100vh;margin:auto;background:var(--cream);box-shadow:0 0 80px rgba(51,34,25,.2);overflow:hidden}.site-shell:before{content:"";position:absolute;inset:0;pointer-events:none;opacity:.22;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140' viewBox='0 0 140 140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.10'/%3E%3C/svg%3E")}.view{position:relative;z-index:1;display:none;min-height:100vh;padding:clamp(22px,5vw,34px);padding-top:max(26px,env(safe-area-inset-top));padding-bottom:max(26px,env(safe-area-inset-bottom))}.view.active{display:block;animation:page-in .35s ease}.hero{text-align:center;padding:0 2px 19px}.cabana-ornament{width:78px;height:29px;margin:-15px auto 22px;border-radius:0 0 50px 50px;background:var(--brown);position:relative}.cabana-ornament span{position:absolute;left:50%;top:21px;width:1px;height:24px;background:var(--brown)}.cabana-ornament span:after{content:"";position:absolute;left:-4px;bottom:-2px;width:9px;height:9px;border:1px solid var(--brown);border-radius:50%;background:var(--cream)}.eyebrow{margin:0 0 9px;color:var(--muted);font-size:9px;font-weight:700;letter-spacing:.25em}.hero h1,.page h2{font-family:"Playfair Display",serif;letter-spacing:-.035em}.hero h1{margin:0;text-transform:uppercase;font-size:clamp(31px,9vw,43px);line-height:1.06}.welcome{max-width:330px;margin:12px auto 16px;color:var(--muted);font-family:"Playfair Display",serif;font-size:12px;line-height:1.5}.stay-status{width:max-content;max-width:100%;margin:auto;padding:6px 10px;border:1px solid rgba(63,48,40,.1);border-radius:999px;display:flex;align-items:center;gap:7px;font-size:10px;font-weight:600;background:rgba(248,240,232,.65)}.stay-status.active{color:var(--green);background:rgba(96,116,94,.1)}.status-dot{width:6px;height:6px;border-radius:50%;background:var(--muted)}.stay-status.active .status-dot{background:var(--green);box-shadow:0 0 0 3px rgba(96,116,94,.1)}.menu-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px 12px;padding:5px 2px 10px}.menu-card{position:relative;min-height:106px;padding:0;border:0;color:var(--brown);background:transparent;box-shadow:none;cursor:pointer;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;transition:.2s ease}.menu-card:nth-child(2),.menu-card:nth-child(5){background:transparent}.menu-card:hover{transform:translateY(-3px);box-shadow:none}.menu-card:active{transform:scale(.97)}.menu-card .icon{width:67px;height:67px;border:0;border-radius:15px;display:grid;place-items:center;margin-bottom:8px;background:rgba(211,188,168,.72);box-shadow:inset 0 0 0 1px rgba(63,48,40,.06);font:400 28px "Playfair Display",serif}.menu-card:nth-child(even) .icon{background:rgba(221,203,186,.78)}.menu-card strong{font-family:"Playfair Display",serif;font-size:11px;font-weight:600;line-height:1.15}.menu-card small{display:none}.lock-badge{position:absolute;top:3px;right:0;padding:3px 5px;border-radius:999px;color:var(--terra);background:var(--cream);box-shadow:0 1px 4px rgba(63,48,40,.12);font-size:7px;font-weight:700;text-transform:uppercase}.lock-badge.open{color:var(--green);background:var(--cream)}.host-help{width:100%;margin-top:12px;padding:13px 16px;border:1px solid rgba(63,48,40,.13);border-radius:13px;color:var(--brown);background:rgba(248,240,232,.55);cursor:pointer;display:flex;align-items:center;justify-content:space-between}.host-help span{font-size:10px;color:var(--muted)}.host-help strong{font-family:"Playfair Display",serif;font-size:11px}.page{padding-top:max(24px,env(safe-area-inset-top))}.back{margin:0 0 44px;padding:9px 0;border:0;color:var(--muted);background:transparent;font-weight:600;cursor:pointer}.page h2{margin:0;font-size:clamp(38px,11vw,54px);line-height:1.02}.lead{margin:15px 0 30px;color:var(--muted);line-height:1.6}.timeline{margin-top:28px}.timeline article{display:grid;grid-template-columns:45px 1fr;gap:14px;padding:18px 0;border-top:1px solid var(--line)}.timeline article>span{width:35px;height:35px;border-radius:12px;display:grid;place-items:center;color:var(--terra);background:var(--sand);font-size:11px;font-weight:700}.timeline h3,.place-list h3{margin:1px 0 6px;font-family:"Playfair Display",serif;font-size:16px}.timeline p,.place-list p{margin:0;color:var(--muted);font-size:13px;line-height:1.55}form{margin-top:28px}form>label:not(.consent){display:block;margin-bottom:17px;font-size:12px;font-weight:700}input[type=text],input:not([type]){width:100%;height:52px;margin-top:8px;padding:0 14px;border:1px solid var(--line);border-radius:12px;outline:0;color:var(--brown);background:var(--paper)}input:focus{border-color:var(--terra);box-shadow:0 0 0 3px rgba(158,104,79,.1)}.consent{display:flex;gap:10px;align-items:flex-start;margin:8px 0 14px;color:var(--muted);font-size:12px;line-height:1.45}.consent input{margin-top:3px;accent-color:var(--terra)}.primary,.secondary{width:100%;height:52px;border:0;border-radius:13px;color:#fff;background:var(--terra);font-weight:700;cursor:pointer;transition:.2s}.primary:hover{background:var(--terra-dark)}.primary:disabled{cursor:not-allowed;background:#b9afa8}.secondary{height:46px;color:var(--brown);background:var(--sand)}.form-message{min-height:20px;margin:8px 0;color:var(--terra);font-size:12px;text-align:center}.notice-card{margin:28px 0 24px;padding:20px;border-radius:15px;background:var(--paper);display:flex;gap:14px;align-items:center}.notice-icon{width:38px;height:38px;flex:0 0 auto;border-radius:12px;display:grid;place-items:center;color:var(--terra);background:var(--sand);font-weight:700}.notice-card p{margin:0;line-height:1.5}.checkout-list{padding:0;list-style:none;margin:0 0 32px}.checkout-list li{padding:14px 0 14px 27px;border-bottom:1px solid var(--line);position:relative;color:var(--muted);font-size:13px}.checkout-list li:before{content:"✓";position:absolute;left:0;color:var(--green)}.danger{background:var(--terra)}.wifi-card{margin-top:25px;padding:24px;border:1px solid var(--line);border-radius:18px;text-align:center;background:var(--paper);box-shadow:none}.wifi-card img{width:min(100%,245px);aspect-ratio:1;object-fit:contain;border-radius:10px;mix-blend-mode:multiply}.wifi-data{padding:17px 0 20px;display:grid;grid-template-columns:65px 1fr;gap:8px;text-align:left}.wifi-data span{color:var(--muted);font-size:10px;font-weight:700;letter-spacing:.12em}.wifi-data strong{font-size:14px}.access-message{margin:24px 0 18px;padding:13px 14px;border-radius:12px;color:var(--terra);background:rgba(158,104,79,.1);font-size:12px;font-weight:600}.access-message.open{color:var(--green);background:rgba(96,116,94,.12)}.control-list{margin-bottom:19px;border:1px solid var(--line);border-radius:15px;overflow:hidden;background:var(--paper)}.control-list label{position:relative;min-height:68px;padding:12px 15px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between}.control-list label:last-child{border:0}.control-list span{display:flex;flex-direction:column;gap:3px}.control-list b{font-family:"Playfair Display",serif;font-size:14px}.control-list small{color:var(--muted);font-size:10px}.device-switch{position:absolute;opacity:0;pointer-events:none}.control-list i{position:relative;width:43px;height:25px;border-radius:99px;background:#c8bfb8;transition:.2s}.control-list i:after{content:"";position:absolute;top:3px;left:3px;width:19px;height:19px;border-radius:50%;background:#fff;box-shadow:0 2px 5px rgba(0,0,0,.2);transition:.2s}.device-switch:checked+i{background:var(--green)}.device-switch:checked+i:after{transform:translateX(18px)}.device-switch:disabled+i{opacity:.5}.security-note{margin:17px 4px;color:var(--muted);font-size:11px;line-height:1.5;text-align:center}.place-list{margin-top:25px}.place-list article{margin-bottom:12px;padding:18px 16px;border:1px solid var(--line);border-radius:15px;background:var(--paper);display:grid;grid-template-columns:44px 1fr auto;gap:12px;align-items:center}.place-icon{width:42px;height:42px;border-radius:12px;display:grid;place-items:center;background:var(--sand);font-size:19px}.toast{position:fixed;z-index:10;left:50%;bottom:24px;width:max-content;max-width:calc(100% - 40px);padding:12px 17px;border-radius:999px;color:#fff;background:var(--brown);box-shadow:var(--shadow);font-size:12px;opacity:0;pointer-events:none;transform:translate(-50%,20px);transition:.25s}.toast.show{opacity:1;transform:translate(-50%,0)}
+@keyframes page-in{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+@media(min-width:700px){body{padding:30px}.site-shell{min-height:calc(100vh - 60px);border:7px solid #171310;border-radius:38px}.view{min-height:calc(100vh - 74px)}.cabana-ornament{margin-top:-26px}.menu-card{min-height:112px}}
+@media(max-width:380px){.view{padding-left:15px;padding-right:15px}.menu-grid{gap:14px 7px}.menu-card .icon{width:60px;height:60px}.host-help{align-items:flex-start;flex-direction:column;gap:4px}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
+
+</style>
+  </head>
+  <body>
+    <main class="site-shell">
+      <section id="home" class="view active" aria-labelledby="home-title">
+        <header class="hero">
+          <div class="cabana-ornament" aria-hidden="true"><span></span></div>
+          <p class="eyebrow">CASA CABANA</p>
+          <h1 id="home-title">Seja bem-vindo!</h1>
+          <p class="welcome">É um prazer receber você. Preparamos este guia para tornar sua estadia ainda mais especial.</p>
+          <div id="stay-status" class="stay-status inactive" role="status">
+            <span class="status-dot"></span>
+            <span>Check-in não realizado</span>
+          </div>
+        </header>
+
+        <nav class="menu-grid" aria-label="Funcionalidades da Casa Cabana">
+          <button class="menu-card" data-page="introduction"><span class="icon">⌂</span><strong>Introdução</strong><small>Conheça a casa</small></button>
+          <button class="menu-card" data-page="checkin"><span class="icon">✓</span><strong>Check-in</strong><small>Inicie sua estadia</small></button>
+          <button class="menu-card" data-page="checkout"><span class="icon">↗</span><strong>Check-out</strong><small>Encerre os acessos</small></button>
+          <button class="menu-card" data-page="wifi"><span class="icon wifi-icon">⌁</span><strong>Wi‑Fi</strong><small>Senha e QR Code</small></button>
+          <button class="menu-card" data-page="automation"><span class="icon">⚿</span><strong>Chave digital</strong><small>Luzes e portão</small><span id="lock-badge" class="lock-badge">Bloqueado</span></button>
+          <button class="menu-card" data-page="places"><span class="icon">⌖</span><strong>Onde comer</strong><small>Locais próximos</small></button>
+        </nav>
+
+        <button class="host-help" data-page="introduction">
+          <span>Precisa de ajuda?</span>
+          <strong>Falar com o anfitrião</strong>
+        </button>
+      </section>
+
+      <section id="introduction" class="view page" aria-labelledby="introduction-title">
+        <button class="back" data-back>← Voltar</button>
+        <p class="eyebrow">COMECE POR AQUI</p>
+        <h2 id="introduction-title">Bem-vindo à<br />Casa Cabana</h2>
+        <p class="lead">Preparamos este guia para deixar sua chegada simples, segura e tranquila.</p>
+        <div class="timeline">
+          <article><span>01</span><div><h3>Conheça a casa</h3><p>Aqui você encontrará as orientações importantes da hospedagem e os contatos do anfitrião.</p></div></article>
+          <article><span>02</span><div><h3>Faça o check-in</h3><p>Confirme seus dados e o código da reserva para liberar a chave digital.</p></div></article>
+          <article><span>03</span><div><h3>Use a chave digital</h3><p>Durante a estadia, controle as luzes e o portão pelo site.</p></div></article>
+          <article><span>04</span><div><h3>Finalize o check-out</h3><p>Ao sair, encerre a estadia para bloquear automaticamente os acessos.</p></div></article>
+        </div>
+      </section>
+
+      <section id="checkin" class="view page" aria-labelledby="checkin-title">
+        <button class="back" data-back>← Voltar</button>
+        <p class="eyebrow">SUA CHEGADA</p>
+        <h2 id="checkin-title">Check-in</h2>
+        <p class="lead">Preencha os dados do responsável pela reserva.</p>
+        <form id="checkin-form" novalidate>
+          <label>Nome completo<input id="guest-name" name="name" autocomplete="name" required placeholder="Digite seu nome" /></label>
+          <label>CPF ou documento<input id="guest-document" name="document" autocomplete="off" required placeholder="Digite seu documento" /></label>
+          <label>Código da reserva<input id="booking-code" name="code" autocomplete="off" required placeholder="Ex.: CC-2026" /></label>
+          <label class="consent"><input id="consent" type="checkbox" required /><span>Confirmo que os dados estão corretos e aceito as regras da hospedagem.</span></label>
+          <p id="checkin-message" class="form-message" role="status"></p>
+          <button class="primary" type="submit">Confirmar check-in</button>
+        </form>
+      </section>
+
+      <section id="checkout" class="view page" aria-labelledby="checkout-title">
+        <button class="back" data-back>← Voltar</button>
+        <p class="eyebrow">FIM DA ESTADIA</p>
+        <h2 id="checkout-title">Check-out</h2>
+        <div class="notice-card">
+          <span class="notice-icon">!</span>
+          <p id="checkout-info">Não existe um check-in ativo para encerrar.</p>
+        </div>
+        <ul class="checkout-list">
+          <li>Os controles de iluminação serão desligados.</li>
+          <li>A chave digital e o portão serão bloqueados.</li>
+          <li>A sessão da estadia será encerrada neste aparelho.</li>
+        </ul>
+        <button id="checkout-button" class="primary danger" type="button">Confirmar check-out</button>
+      </section>
+
+      <section id="wifi" class="view page" aria-labelledby="wifi-title">
+        <button class="back" data-back>← Voltar</button>
+        <p class="eyebrow">CONEXÃO DA CASA</p>
+        <h2 id="wifi-title">Wi‑Fi</h2>
+        <div class="wifi-card">
+          <img src="data:image/png;base64,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" alt="QR Code para conectar à rede Wi-Fi Casa Cabana" />
+          <div class="wifi-data"><span>REDE</span><strong>Casa Cabana</strong><span>SENHA</span><strong id="wifi-password">trocar-esta-senha</strong></div>
+          <button id="copy-wifi" class="secondary" type="button">Copiar senha</button>
+          <p id="copy-message" class="form-message" role="status">Aponte a câmera para o QR Code.</p>
+        </div>
+      </section>
+
+      <section id="automation" class="view page" aria-labelledby="automation-title">
+        <button class="back" data-back>← Voltar</button>
+        <p class="eyebrow">CONTROLES DA CASA</p>
+        <h2 id="automation-title">Chave digital</h2>
+        <div id="automation-access" class="access-message locked">Faça o check-in para liberar os controles.</div>
+        <div class="control-list">
+          <label><span><b>Luzes da piscina</b><small>Área externa</small></span><input class="device-switch" type="checkbox" role="switch" /><i></i></label>
+          <label><span><b>Luzes da sala</b><small>Área interna</small></span><input class="device-switch" type="checkbox" role="switch" /><i></i></label>
+          <label><span><b>Luz do quarto 1</b><small>Suíte principal</small></span><input class="device-switch" type="checkbox" role="switch" /><i></i></label>
+          <label><span><b>Luz do quarto 2</b><small>Quarto de hóspedes</small></span><input class="device-switch" type="checkbox" role="switch" /><i></i></label>
+          <label><span><b>Luz do quarto 3</b><small>Quarto de hóspedes</small></span><input class="device-switch" type="checkbox" role="switch" /><i></i></label>
+        </div>
+        <button id="gate-button" class="primary" type="button" disabled>Abrir portão</button>
+        <p class="security-note">Demonstração visual. A automação real será conectada posteriormente a um servidor seguro.</p>
+      </section>
+
+      <section id="places" class="view page" aria-labelledby="places-title">
+        <button class="back" data-back>← Voltar</button>
+        <p class="eyebrow">PERTO DE VOCÊ</p>
+        <h2 id="places-title">Onde comer</h2>
+        <p class="lead">Sugestões da Casa Cabana para aproveitar a região.</p>
+        <div class="place-list">
+          <article><span class="place-icon">☕</span><div><h3>Cafés e padarias</h3><p>Adicione aqui os locais favoritos para o café da manhã.</p></div><span>→</span></article>
+          <article><span class="place-icon">♨</span><div><h3>Restaurantes</h3><p>Recomendações para almoço e jantar próximas à casa.</p></div><span>→</span></article>
+          <article><span class="place-icon">◇</span><div><h3>Mercados</h3><p>Opções rápidas para comprar alimentos e bebidas.</p></div><span>→</span></article>
+        </div>
+        <p class="security-note">As distâncias e rotas serão adicionadas quando o endereço da Casa Cabana for definido.</p>
+      </section>
+    </main>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <script>
+const STORAGE_KEY = "casa-cabana-estadia";
+const views = [...document.querySelectorAll(".view")];
+const switches = [...document.querySelectorAll(".device-switch")];
+const statusBox = document.querySelector("#stay-status");
+const lockBadge = document.querySelector("#lock-badge");
+const accessBox = document.querySelector("#automation-access");
+const gateButton = document.querySelector("#gate-button");
+const checkoutButton = document.querySelector("#checkout-button");
+const checkoutInfo = document.querySelector("#checkout-info");
+let gateOpen = false;
+
+function getStay() {
+  try { return JSON.parse(localStorage.getItem(STORAGE_KEY)) || { active: false }; }
+  catch { return { active: false }; }
+}
+
+function saveStay(stay) { localStorage.setItem(STORAGE_KEY, JSON.stringify(stay)); }
+
+function showPage(id) {
+  views.forEach((view) => view.classList.toggle("active", view.id === id));
+  window.scrollTo({ top: 0, behavior: "smooth" });
+  history.replaceState(null, "", id === "home" ? "#" : `#${id}`);
+  refreshAccess();
+}
+
+function toast(message) {
+  const element = document.querySelector("#toast");
+  element.textContent = message;
+  element.classList.add("show");
+  window.clearTimeout(toast.timer);
+  toast.timer = window.setTimeout(() => element.classList.remove("show"), 2400);
+}
+
+function refreshAccess() {
+  const stay = getStay();
+  statusBox.classList.toggle("active", stay.active);
+  statusBox.classList.toggle("inactive", !stay.active);
+  statusBox.querySelector("span:last-child").textContent = stay.active
+    ? `Check-in ativo${stay.name ? ` • ${stay.name.split(" ")[0]}` : ""}`
+    : "Check-in não realizado";
+  lockBadge.textContent = stay.active ? "Liberado" : "Bloqueado";
+  lockBadge.classList.toggle("open", stay.active);
+  accessBox.textContent = stay.active ? "Acesso liberado durante sua estadia." : "Faça o check-in para liberar os controles.";
+  accessBox.classList.toggle("open", stay.active);
+  accessBox.classList.toggle("locked", !stay.active);
+  switches.forEach((control) => {
+    control.disabled = !stay.active;
+    if (!stay.active) control.checked = false;
+  });
+  gateButton.disabled = !stay.active;
+  if (!stay.active) gateOpen = false;
+  gateButton.textContent = stay.active ? (gateOpen ? "Fechar portão" : "Abrir portão") : "Portão bloqueado";
+  checkoutButton.disabled = !stay.active;
+  checkoutInfo.textContent = stay.active
+    ? "Ao confirmar, os controles serão desligados e todos os acessos serão removidos."
+    : "Não existe um check-in ativo para encerrar.";
+}
+
+document.querySelectorAll("[data-page]").forEach((button) => button.addEventListener("click", () => showPage(button.dataset.page)));
+document.querySelectorAll("[data-back]").forEach((button) => button.addEventListener("click", () => showPage("home")));
+
+document.querySelector("#checkin-form").addEventListener("submit", (event) => {
+  event.preventDefault();
+  const name = document.querySelector("#guest-name").value.trim();
+  const documentValue = document.querySelector("#guest-document").value.trim();
+  const code = document.querySelector("#booking-code").value.trim();
+  const consent = document.querySelector("#consent").checked;
+  const message = document.querySelector("#checkin-message");
+  if (!name || !documentValue || !code || !consent) {
+    message.textContent = "Preencha todos os campos e confirme as regras.";
+    return;
+  }
+  saveStay({ active: true, name, code, startedAt: new Date().toISOString() });
+  message.textContent = "✓ Check-in confirmado. A chave digital foi liberada.";
+  message.style.color = "var(--green)";
+  refreshAccess();
+  toast("Check-in realizado com sucesso");
+});
+
+checkoutButton.addEventListener("click", () => {
+  if (!getStay().active) return;
+  switches.forEach((control) => { control.checked = false; });
+  saveStay({ active: false });
+  gateOpen = false;
+  refreshAccess();
+  toast("Check-out concluído. Acessos bloqueados.");
+});
+
+gateButton.addEventListener("click", () => {
+  if (!getStay().active) return;
+  gateOpen = !gateOpen;
+  gateButton.textContent = gateOpen ? "Fechar portão" : "Abrir portão";
+  toast(gateOpen ? "Comando para abrir o portão enviado" : "Comando para fechar o portão enviado");
+});
+
+switches.forEach((control) => control.addEventListener("change", () => toast(control.checked ? "Luz ligada" : "Luz desligada")));
+
+document.querySelector("#copy-wifi").addEventListener("click", async () => {
+  const password = document.querySelector("#wifi-password").textContent;
+  try {
+    await navigator.clipboard.writeText(password);
+    document.querySelector("#copy-message").textContent = "✓ Senha copiada.";
+  } catch {
+    document.querySelector("#copy-message").textContent = `Senha: ${password}`;
+  }
+});
+
+const requested = location.hash.slice(1);
+showPage(views.some((view) => view.id === requested) ? requested : "home");
+
+</script>
+  </body>
+</html>
