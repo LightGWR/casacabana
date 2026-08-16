@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Guia da Casa Cabana">
+  <title>Casa Cabana</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <main class="site-shell">
+    <div class="content">
+      <section id="inicio" class="site-view active" aria-labelledby="home-title">
+        <header class="home-head">
+          <div class="cabana-ornament"></div>
+          <p class="eyebrow">CASA CABANA</p>
+          <h1 id="home-title">Seja bem-vindo!</h1>
+          <p class="welcome">Toque em um ícone para consultar as informações preparadas para a sua estadia.</p>
+        </header>
+
+        <nav class="menu-grid" aria-label="Informações da Casa Cabana">
+          <button class="menu-card" type="button" data-view="introducao" aria-label="Abrir Introdução"><span class="icon" aria-hidden="true">⌂</span><strong>Introdução</strong></button>
+          <button class="menu-card" type="button" data-view="localizacao" aria-label="Abrir Localização"><span class="icon" aria-hidden="true">⌖</span><strong>Localização</strong></button>
+          <button class="menu-card" type="button" data-view="cardapio" aria-label="Abrir Cardápio"><span class="icon" aria-hidden="true">☷</span><strong>Cardápio</strong></button>
+          <button class="menu-card" type="button" data-view="lugares" aria-label="Abrir Onde comer"><span class="icon" aria-hidden="true">♨</span><strong>Onde comer</strong></button>
+          <button class="menu-card" type="button" data-view="informacoes" aria-label="Abrir Informações"><span class="icon" aria-hidden="true">ⓘ</span><strong>Informações</strong></button>
+          <button class="menu-card" type="button" data-view="contato" aria-label="Abrir Contato"><span class="icon" aria-hidden="true">☎</span><strong>Contato</strong></button>
+        </nav>
+
+        <footer class="public-footer"><span>Casa Cabana</span><a href="login.html">Área administrativa</a></footer>
+      </section>
+
+      <section id="introducao" class="site-view" aria-labelledby="introducao-title">
+        <header class="topic-head"><button class="back" type="button" data-back>← Voltar</button><span class="mini-brand">Casa Cabana</span></header>
+        <div class="topic-hero"><span class="topic-icon" aria-hidden="true">⌂</span><p class="eyebrow">BOAS-VINDAS</p><h2 id="introducao-title">Introdução</h2></div>
+        <div class="notice topic-content"><strong>Bem-vindo à Casa Cabana</strong><br>Este é o seu guia da casa. Use os ícones da tela inicial para consultar a localização, conferir o cardápio, descobrir lugares para comer e encontrar as principais informações da estadia.</div>
+      </section>
+
+      <section id="localizacao" class="site-view" aria-labelledby="localizacao-title">
+        <header class="topic-head"><button class="back" type="button" data-back>← Voltar</button><span class="mini-brand">Casa Cabana</span></header>
+        <div class="topic-hero"><span class="topic-icon" aria-hidden="true">⌖</span><p class="eyebrow">COMO CHEGAR</p><h2 id="localizacao-title">Localização</h2></div>
+        <div id="house-location" class="location-box"><p>Carregando...</p></div>
+      </section>
+
+      <section id="cardapio" class="site-view" aria-labelledby="cardapio-title">
+        <header class="topic-head"><button class="back" type="button" data-back>← Voltar</button><span class="mini-brand">Casa Cabana</span></header>
+        <div class="topic-hero"><span class="topic-icon" aria-hidden="true">☷</span><p class="eyebrow">DISPONÍVEL NA CASA</p><h2 id="cardapio-title">Cardápio</h2></div>
+        <div id="menu-list" class="grid"><div class="empty">Carregando...</div></div>
+      </section>
+
+      <section id="lugares" class="site-view" aria-labelledby="lugares-title">
+        <header class="topic-head"><button class="back" type="button" data-back>← Voltar</button><span class="mini-brand">Casa Cabana</span></header>
+        <div class="topic-hero"><span class="topic-icon" aria-hidden="true">♨</span><p class="eyebrow">RECOMENDAÇÕES</p><h2 id="lugares-title">Onde comer</h2></div>
+        <div id="places-list" class="grid"><div class="empty">Carregando...</div></div>
+      </section>
+
+      <section id="informacoes" class="site-view" aria-labelledby="informacoes-title">
+        <header class="topic-head"><button class="back" type="button" data-back>← Voltar</button><span class="mini-brand">Casa Cabana</span></header>
+        <div class="topic-hero"><span class="topic-icon" aria-hidden="true">ⓘ</span><p class="eyebrow">SUA ESTADIA</p><h2 id="informacoes-title">Informações</h2></div>
+        <div class="notice topic-content"><strong>Informações da estadia</strong><br>Consulte este espaço durante a sua visita. Os dados da casa, do cardápio e das recomendações são mantidos atualizados pelo anfitrião.</div>
+      </section>
+
+      <section id="contato" class="site-view" aria-labelledby="contato-title">
+        <header class="topic-head"><button class="back" type="button" data-back>← Voltar</button><span class="mini-brand">Casa Cabana</span></header>
+        <div class="topic-hero"><span class="topic-icon" aria-hidden="true">☎</span><p class="eyebrow">PRECISA DE AJUDA?</p><h2 id="contato-title">Contato</h2></div>
+        <div class="host-help topic-content"><span>Entre em contato em caso de dúvida ou emergência.</span><strong>Fale com o anfitrião</strong></div>
+      </section>
+    </div>
+  </main>
+  <script type="module" src="assets/public.js"></script>
+</body>
+</html>
